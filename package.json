@@ -1,0 +1,29 @@
+{
+  "name": "drivenotes-webapp",
+  "version": "1.0.0",
+  "description": "A modern drive and notes webapp with AI features and Google Calendar integration",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "dev:server:cloudinary": "cd server && npm run dev:cloudinary",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm run start:cloudinary",
+    "start:cloudinary": "cd server && npm run start:cloudinary",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "setup": "npm run install:all"
+  },
+  "keywords": [
+    "drive",
+    "notes",
+    "webapp",
+    "ai",
+    "calendar",
+    "notifications"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
