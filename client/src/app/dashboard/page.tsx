@@ -33,7 +33,7 @@ import ThemeToggle from '@/components/ThemeToggle';
 import NotesWidget from '@/components/NotesWidget';
 import NotesSidebarWidget from '@/components/NotesSidebarWidget';
 import NoteModal from '@/components/NoteModal';
-import { CreateNoteRequest } from '@/types/notes';
+import { CreateNoteRequest, UpdateNoteRequest } from '@/types/notes';
 
 export default function DashboardPage() {
   const { user, logout, loading: authLoading } = useAuth();
@@ -634,7 +634,7 @@ export default function DashboardPage() {
         <NoteModal
           isOpen={showNoteModal}
           onClose={() => setShowNoteModal(false)}
-          onSave={async (noteData: CreateNoteRequest) => {
+          onSave={(noteData: CreateNoteRequest | UpdateNoteRequest) => {
             // Handle note creation from quick action
             console.log('Note created:', noteData);
           }}
