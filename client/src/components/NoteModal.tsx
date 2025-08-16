@@ -192,14 +192,31 @@ const NoteModal: React.FC<NoteModalProps> = ({
       // Call AI API directly with content instead of requiring a note ID
       const response = await aiAPI.processContent(content, aiFunction, instructions);
       
-      if (response.success) {
-        return response.data;
+      // Handle axios response structure
+      if (response.data && response.data.success) {
+        return response.data.data;
       } else {
-        throw new Error('AI processing failed');
+        throw new Error(response.data?.message || 'AI processing failed');
       }
     } catch (error) {
       console.error('AI processing error:', error);
-      alert('AI processing failed. Please check your API settings and ensure you have set up an AI provider.');
+      console.error('Error response data:', error.response?.data);
+      console.error('Error status:', error.response?.status);
+      
+      // More detailed error handling
+      let errorMessage = 'AI processing failed. Please check your AI settings.';
+      
+      if (error.response?.status === 400) {
+        errorMessage = error.response?.data?.message || 'Invalid request. Please check your input and try again.';
+      } else if (error.response?.status === 401) {
+        errorMessage = 'Authentication failed. Please check your login status.';
+      } else if (error.response?.status === 500) {
+        errorMessage = error.response?.data?.message || 'Server error. Please ensure you have configured an AI provider with a valid API key.';
+      } else if (error.response?.data?.message) {
+        errorMessage = error.response.data.message;
+      }
+      
+      alert(errorMessage);
       return null;
     } finally {
       setAiProcessing(false);

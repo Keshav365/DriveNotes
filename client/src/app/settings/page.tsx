@@ -171,10 +171,20 @@ export default function SettingsPage() {
     try {
       const response = await userAPI.getAISettings();
       if (response.data.success) {
+        // Transform server response format to match client expectations
+        const serverData = response.data.data;
         setAiSettings({
-          provider: response.data.data.aiSettings.provider,
-          preferences: response.data.data.aiSettings.preferences,
-          hasApiKeys: response.data.data.aiSettings.hasApiKeys
+          provider: serverData.selectedProvider,
+          preferences: {
+            defaultModel: serverData.providers[serverData.selectedProvider]?.model || 'gpt-3.5-turbo',
+            maxTokens: 1000, // Set default since server doesn't provide this yet
+            temperature: 0.7 // Set default since server doesn't provide this yet
+          },
+          hasApiKeys: {
+            openai: serverData.providers.openai?.hasApiKey || false,
+            gemini: serverData.providers.gemini?.hasApiKey || false,
+            claude: serverData.providers.claude?.hasApiKey || false
+          }
         });
       }
     } catch (error) {
@@ -227,8 +237,7 @@ export default function SettingsPage() {
         'gemini-1.5-flash-002',
         'gemini-1.5-flash-8b-latest',
         'gemini-1.5-flash-8b',
-        'gemini-pro',
-        'gemini-pro-vision'
+        'gemini-1.0-pro'
       ]
     },
     {
@@ -384,10 +393,18 @@ export default function SettingsPage() {
   const handleAiSettingsSave = async () => {
     try {
       setAiLoading(true);
-      const response = await userAPI.updateAISettings({
-        provider: aiSettings.provider,
-        preferences: aiSettings.preferences
-      });
+      // Transform client data format to match server expectations
+      const serverData = {
+        selectedProvider: aiSettings.provider,
+        providers: {
+          [aiSettings.provider]: {
+            model: aiSettings.preferences.defaultModel,
+            enabled: true
+          }
+        }
+      };
+      
+      const response = await userAPI.updateAISettings(serverData);
       
       if (response.data.success) {
         setMessage({ type: 'success', content: 'AI settings updated successfully!' });

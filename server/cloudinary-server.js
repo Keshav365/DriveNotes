@@ -2621,7 +2621,7 @@ const AISettingsSchema = new mongoose.Schema({
       },
       gemini: {
         apiKey: { type: String, default: null },
-        model: { type: String, default: 'gemini-pro' },
+        model: { type: String, default: 'gemini-1.5-flash' },
         enabled: { type: Boolean, default: false }
       },
       claude: {
@@ -2644,24 +2644,24 @@ function getDefaultAIProviders() {
       {
         id: 'openai',
         name: 'OpenAI',
-        models: ['gpt-3.5-turbo', 'gpt-4', 'gpt-4-turbo-preview'],
-        description: 'ChatGPT models from OpenAI',
+        models: ['gpt-4o', 'gpt-4o-mini', 'gpt-4-turbo', 'gpt-4', 'gpt-3.5-turbo'],
+        description: 'GPT models from OpenAI',
         website: 'https://openai.com',
         enabled: true
       },
       {
         id: 'gemini',
         name: 'Google Gemini',
-        models: ['gemini-pro', 'gemini-pro-vision'],
-        description: 'Google\'s advanced AI models',
+        models: ['gemini-2.0-flash-exp', 'gemini-1.5-pro-latest', 'gemini-1.5-pro', 'gemini-1.5-pro-002', 'gemini-1.5-flash-latest', 'gemini-1.5-flash', 'gemini-1.5-flash-002', 'gemini-1.5-flash-8b-latest', 'gemini-1.5-flash-8b', 'gemini-1.0-pro'],
+        description: 'Gemini models from Google',
         website: 'https://ai.google.dev',
         enabled: true
       },
       {
         id: 'claude',
         name: 'Anthropic Claude',
-        models: ['claude-3-sonnet-20240229', 'claude-3-opus-20240229', 'claude-3-haiku-20240307'],
-        description: 'Anthropic\'s Claude AI models',
+        models: ['claude-3-5-sonnet-20241022', 'claude-3-5-haiku-20241022', 'claude-3-opus-20240229', 'claude-3-sonnet-20240229', 'claude-3-haiku-20240307'],
+        description: 'Claude models from Anthropic',
         website: 'https://anthropic.com',
         enabled: true
       }
@@ -2763,7 +2763,7 @@ app.get('/api/user/ai-settings', authenticateToken, async (req, res) => {
             },
             gemini: {
               apiKey: null,
-              model: 'gemini-pro',
+              model: 'gemini-1.5-flash',
               enabled: false
             },
             claude: {
