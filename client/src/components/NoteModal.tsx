@@ -250,7 +250,6 @@ const NoteModal: React.FC<NoteModalProps> = ({
       setContent(result.formattedContent);
     }
   };
-
   if (!isOpen) return null;
 
   return (

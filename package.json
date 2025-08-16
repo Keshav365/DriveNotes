@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A modern drive and notes webapp with AI features and Google Calendar integration",
   "scripts": {
-    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server:cloudinary\"",
     "dev:client": "cd client && npm run dev",
     "dev:server": "cd server && npm run dev",
     "dev:server:cloudinary": "cd server && npm run dev:cloudinary",

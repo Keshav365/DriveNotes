@@ -75,6 +75,7 @@ export const userAPI = {
   getStorage: () => api.get('/user/storage'),
   
   // AI Settings
+  getAISettings: () => api.get('/user/ai-settings'),
   getAvailableAIProviders: () => api.get('/user/ai-providers'),
   updateAISettings: (data: any) => api.put('/user/ai-settings', data),
   setAIApiKey: (provider: string, apiKey: string) => 
@@ -275,5 +276,4 @@ export const aiAPI = {
       headers: { 'Content-Type': 'application/json' }
     }),
 };
-
 export default api;

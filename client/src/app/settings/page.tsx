@@ -77,7 +77,6 @@ interface AISettings {
     claude: boolean;
   };
 }
-
 export default function SettingsPage() {
   const { user } = useAuth();
   const router = useRouter();
@@ -135,7 +134,6 @@ export default function SettingsPage() {
   });
   const [aiLoading, setAiLoading] = useState(false);
   const [availableProviders, setAvailableProviders] = useState<any[]>([]);
-  
   // Get utility dropdown options
   const countryOptions = getHolidayCountryOptions();
   const timezoneOptions = getCommonTimezones();
@@ -171,8 +169,8 @@ export default function SettingsPage() {
 
   const loadAiSettings = async () => {
     try {
-      const response = await userAPI.getProfile();
-      if (response.data.success && response.data.data.aiSettings) {
+      const response = await userAPI.getAISettings();
+      if (response.data.success) {
         setAiSettings({
           provider: response.data.data.aiSettings.provider,
           preferences: response.data.data.aiSettings.preferences,
@@ -445,7 +443,6 @@ export default function SettingsPage() {
       setAiLoading(false);
     }
   };
-
   const getWidgetIcon = (iconName: string) => {
     const icons = {
       File: <File className="w-5 h-5" />,
@@ -1422,7 +1419,6 @@ export default function SettingsPage() {
                 </div>
               </motion.div>
             )}
-
             {activeTab === 'layout' && (
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
