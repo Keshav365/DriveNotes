@@ -6,9 +6,13 @@
   "scripts": {
     "dev": "nodemon src/server.ts",
     "dev:cloudinary": "nodemon cloudinary-server.js",
+    "dev:simple": "nodemon simple-server.js",
+    "dev:network": "node start-network.js",
     "build": "tsc",
     "start": "node dist/server.js",
+    "start:simple": "node simple-server.js",
     "start:cloudinary": "node cloudinary-server.js",
+    "start:network": "node start-network.js",
     "test": "jest",
     "lint": "eslint . --ext .ts"
   },
