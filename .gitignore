@@ -1,6 +1,36 @@
-client\.env.local
-server\.env
-client\node_modules
-server\node_modules
-node_modules
-server\.env
+# Environment files
+client/.env.local
+server/.env
+.env
+.env.local
+.env.production
+
+# Dependencies
+client/node_modules
+server/node_modules
+node_modules/
+
+# Next.js build output and cache
+client/.next/
+client/out/
+client/build/
+
+# Log files
+server/logs/
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
