@@ -8,7 +8,8 @@ import {
   NotePriority,
   NOTE_COLOR_CONFIGS, 
   NOTE_PRIORITY_CONFIGS,
-  CreateNoteRequest 
+  CreateNoteRequest,
+  UpdateNoteRequest 
 } from '@/types/notes';
 import { notesAPI } from '@/services/api';
 import NoteModal from './NoteModal';
@@ -59,9 +60,7 @@ const NotesSidebarWidget: React.FC<NotesSidebarWidgetProps> = ({
       }
 
       const params: any = {
-        limit: maxNotes,
-        sortBy: 'updatedAt',
-        sortOrder: 'desc'
+        limit: maxNotes
       };
 
       // Show pinned notes first if enabled
@@ -71,20 +70,21 @@ const NotesSidebarWidget: React.FC<NotesSidebarWidgetProps> = ({
 
       const response = await notesAPI.getNotes(params);
       
-      if (response.data.success) {
-        let fetchedNotes = response.data.data.notes;
+      // Type assertion to handle response structure
+      const responseData = response.data as any;
+      if (responseData.success) {
+        let fetchedNotes = responseData.data.notes;
         
         // If we're showing pinned notes but don't have enough, get recent notes too
         if (showPinned && fetchedNotes.length < maxNotes) {
           const recentResponse = await notesAPI.getNotes({
             limit: maxNotes - fetchedNotes.length,
-            sortBy: 'updatedAt',
-            sortOrder: 'desc',
-            pinned: false
+            archived: false
           });
           
-          if (recentResponse.data.success) {
-            fetchedNotes = [...fetchedNotes, ...recentResponse.data.data.notes];
+          const recentResponseData = recentResponse.data as any;
+          if (recentResponseData.success) {
+            fetchedNotes = [...fetchedNotes, ...recentResponseData.data.notes];
           }
         }
         
@@ -108,8 +108,9 @@ const NotesSidebarWidget: React.FC<NotesSidebarWidgetProps> = ({
   const handleCreateNote = async (noteData: CreateNoteRequest) => {
     try {
       const response = await notesAPI.createNote(noteData);
-      if (response.data.success) {
-        setNotes(prev => [response.data.data, ...prev.slice(0, maxNotes - 1)]);
+      const responseData = response.data as any;
+      if (responseData.success) {
+        setNotes(prev => [responseData.data, ...prev.slice(0, maxNotes - 1)]);
       }
     } catch (error) {
       console.error('Failed to create note:', error);
@@ -133,7 +134,8 @@ const NotesSidebarWidget: React.FC<NotesSidebarWidgetProps> = ({
   const handlePinNote = async (noteId: string, pinned: boolean) => {
     try {
       const response = await notesAPI.pinNote(noteId, pinned);
-      if (response.data.success) {
+      const responseData = response.data as any;
+      if (responseData.success) {
         setNotes(prev => prev.map(note => 
           note.id === noteId ? { ...note, pinned } : note
         ));
@@ -399,11 +401,11 @@ const NotesSidebarWidget: React.FC<NotesSidebarWidgetProps> = ({
         }}
         note={selectedNote}
         onSave={selectedNote ? 
-          (data) => {
+          (data: CreateNoteRequest | UpdateNoteRequest) => {
             // Handle update - for now just refresh the list
             loadNotes(true);
           } : 
-          handleCreateNote
+          (data: CreateNoteRequest | UpdateNoteRequest) => handleCreateNote(data as CreateNoteRequest)
         }
         onDelete={selectedNote ? () => handleDeleteNote(selectedNote.id) : undefined}
       />

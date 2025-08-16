@@ -113,8 +113,9 @@ const NotesWidget: React.FC<NotesWidgetProps> = ({
       }
 
       const response = await notesAPI.getNotes(params);
-      if (response.data.success) {
-        setNotes(response.data.data.notes);
+      const responseData = response.data as any;
+      if (responseData.success) {
+        setNotes(responseData.data.notes);
         setError(null);
       }
     } catch (err) {
@@ -135,8 +136,9 @@ const NotesWidget: React.FC<NotesWidgetProps> = ({
   const handleCreateNote = async (noteData: CreateNoteRequest) => {
     try {
       const response = await notesAPI.createNote(noteData);
-      if (response.data.success) {
-        setNotes(prev => [response.data.data, ...prev]);
+      const responseData = response.data as any;
+      if (responseData.success) {
+        setNotes(prev => [responseData.data, ...prev]);
       }
     } catch (error) {
       console.error('Failed to create note:', error);
@@ -146,9 +148,10 @@ const NotesWidget: React.FC<NotesWidgetProps> = ({
   const handleUpdateNote = async (noteId: string, updates: Partial<Note>) => {
     try {
       const response = await notesAPI.updateNote(noteId, updates);
-      if (response.data.success) {
+      const responseData = response.data as any;
+      if (responseData.success) {
         setNotes(prev => prev.map(note => 
-          note.id === noteId ? { ...note, ...response.data.data } : note
+          note.id === noteId ? { ...note, ...responseData.data } : note
         ));
       }
     } catch (error) {
@@ -169,7 +172,8 @@ const NotesWidget: React.FC<NotesWidgetProps> = ({
   const handlePinNote = async (noteId: string, pinned: boolean) => {
     try {
       const response = await notesAPI.pinNote(noteId, pinned);
-      if (response.data.success) {
+      const responseData = response.data as any;
+      if (responseData.success) {
         setNotes(prev => prev.map(note => 
           note.id === noteId ? { ...note, pinned } : note
         ));
@@ -182,8 +186,9 @@ const NotesWidget: React.FC<NotesWidgetProps> = ({
   const handleDuplicateNote = async (noteId: string) => {
     try {
       const response = await notesAPI.duplicateNote(noteId);
-      if (response.data.success) {
-        setNotes(prev => [response.data.data, ...prev]);
+      const responseData = response.data as any;
+      if (responseData.success) {
+        setNotes(prev => [responseData.data, ...prev]);
       }
     } catch (error) {
       console.error('Failed to duplicate note:', error);
@@ -193,7 +198,8 @@ const NotesWidget: React.FC<NotesWidgetProps> = ({
   const handleColorChange = async (noteId: string, color: NoteColor) => {
     try {
       const response = await notesAPI.updateNoteColor(noteId, color);
-      if (response.data.success) {
+      const responseData = response.data as any;
+      if (responseData.success) {
         setNotes(prev => prev.map(note => 
           note.id === noteId ? { ...note, color } : note
         ));
@@ -206,7 +212,8 @@ const NotesWidget: React.FC<NotesWidgetProps> = ({
   const handlePriorityChange = async (noteId: string, priority: NotePriority) => {
     try {
       const response = await notesAPI.updateNotePriority(noteId, priority);
-      if (response.data.success) {
+      const responseData = response.data as any;
+      if (responseData.success) {
         setNotes(prev => prev.map(note => 
           note.id === noteId ? { ...note, priority } : note
         ));
@@ -258,7 +265,7 @@ const NotesWidget: React.FC<NotesWidgetProps> = ({
     if (selectedNotes.length === 0) return;
 
     try {
-      await notesAPI.bulkUpdate(selectedNotes, { pinned });
+      await notesAPI.bulkUpdate(pinned ? 'pin' : 'unpin', selectedNotes);
       setNotes(prev => prev.map(note => 
         selectedNotes.includes(note.id) ? { ...note, pinned } : note
       ));
@@ -540,8 +547,8 @@ const NotesWidget: React.FC<NotesWidgetProps> = ({
         }}
         note={editingNote}
         onSave={editingNote ? 
-          (data) => handleUpdateNote(editingNote.id, data as UpdateNoteRequest) : 
-          handleCreateNote
+          (data: CreateNoteRequest | UpdateNoteRequest) => handleUpdateNote(editingNote.id, data as UpdateNoteRequest) : 
+          (data: CreateNoteRequest | UpdateNoteRequest) => handleCreateNote(data as CreateNoteRequest)
         }
         onDelete={editingNote ? () => handleDeleteNote(editingNote.id) : undefined}
         defaultColor={DEFAULT_NOTES_SETTINGS.defaultColor}

@@ -1194,7 +1194,7 @@ export default function SettingsPage() {
                           <h4 className="font-medium mb-1">{provider.name}</h4>
                           <p className="text-xs opacity-80">{provider.description}</p>
                           <div className="mt-2">
-                            {aiSettings.hasApiKeys[provider.id] ? (
+                            {provider.id in aiSettings.hasApiKeys && aiSettings.hasApiKeys[provider.id as keyof typeof aiSettings.hasApiKeys] ? (
                               <div className="flex items-center justify-center space-x-1 text-green-600 dark:text-green-400">
                                 <CheckCircle className="w-3 h-3" />
                                 <span className="text-xs">API Key Set</span>
@@ -1220,9 +1220,9 @@ export default function SettingsPage() {
                         <h3 className="text-sm font-medium text-gray-900 dark:text-gray-100 flex items-center space-x-2">
                           <Key className="w-4 h-4" />
                           <span>{provider.name} API Key</span>
-                          {aiSettings.hasApiKeys[provider.id] && <CheckCircle className="w-4 h-4 text-green-500" />}
+                          {aiSettings.hasApiKeys[provider.id as keyof typeof aiSettings.hasApiKeys] && <CheckCircle className="w-4 h-4 text-green-500" />}
                         </h3>
-                        {aiSettings.hasApiKeys[provider.id] && (
+                        {aiSettings.hasApiKeys[provider.id as keyof typeof aiSettings.hasApiKeys] && (
                           <button
                             onClick={() => handleRemoveAiApiKey(provider.id)}
                             disabled={aiLoading}
@@ -1237,26 +1237,26 @@ export default function SettingsPage() {
                         <div className="flex space-x-2">
                           <div className="relative flex-1">
                             <input
-                              type={showAiApiKeys[provider.id] ? "text" : "password"}
-                              value={aiApiKeys[provider.id]}
+                              type={showAiApiKeys[provider.id as keyof typeof showAiApiKeys] ? "text" : "password"}
+                              value={aiApiKeys[provider.id as keyof typeof aiApiKeys]}
                               onChange={(e) => setAiApiKeys(prev => ({ ...prev, [provider.id]: e.target.value }))}
                               className="w-full px-3 py-2 pr-10 border border-gray-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors"
-                              placeholder={aiSettings.hasApiKeys[provider.id] ? "API key configured (enter new key to update)" : `Enter your ${provider.name} API key`}
+                              placeholder={aiSettings.hasApiKeys[provider.id as keyof typeof aiSettings.hasApiKeys] ? "API key configured (enter new key to update)" : `Enter your ${provider.name} API key`}
                             />
                             <button
                               type="button"
-                              onClick={() => setShowAiApiKeys(prev => ({ ...prev, [provider.id]: !prev[provider.id] }))}
+onClick={() => setShowAiApiKeys(prev => ({ ...prev, [provider.id as keyof typeof prev]: !prev[provider.id as keyof typeof prev] }))}
                               className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
                             >
-                              {showAiApiKeys[provider.id] ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                              {showAiApiKeys[provider.id as keyof typeof showAiApiKeys] ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                             </button>
                           </div>
                           <button
-                            onClick={() => handleSetAiApiKey(provider.id, aiApiKeys[provider.id])}
-                            disabled={aiLoading || !aiApiKeys[provider.id].trim()}
+onClick={() => handleSetAiApiKey(provider.id, aiApiKeys[provider.id as keyof typeof aiApiKeys])}
+disabled={aiLoading || !aiApiKeys[provider.id as keyof typeof aiApiKeys].trim()}
                             className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                           >
-                            {aiLoading ? 'Saving...' : (aiSettings.hasApiKeys[provider.id] ? 'Update' : 'Save')}
+                            {aiLoading ? 'Saving...' : (aiSettings.hasApiKeys[provider.id as keyof typeof aiSettings.hasApiKeys] ? 'Update' : 'Save')}
                           </button>
                         </div>
                         
@@ -1318,7 +1318,7 @@ export default function SettingsPage() {
                         })}
                         className="w-full px-3 py-2 border border-gray-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors"
                       >
-                        {availableProviders.find(p => p.id === aiSettings.provider)?.models.map((model) => (
+{availableProviders.find((p: { id: string; models: string[] }) => p.id === aiSettings.provider)?.models.map((model: string) => (
                           <option key={model} value={model}>{model}</option>
                         )) || <option value="gpt-3.5-turbo">gpt-3.5-turbo</option>}
                       </select>

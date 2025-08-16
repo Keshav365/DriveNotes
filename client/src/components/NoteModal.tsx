@@ -198,22 +198,34 @@ const NoteModal: React.FC<NoteModalProps> = ({
       } else {
         throw new Error(response.data?.message || 'AI processing failed');
       }
-    } catch (error) {
+    } catch (error: unknown) {
       console.error('AI processing error:', error);
-      console.error('Error response data:', error.response?.data);
-      console.error('Error status:', error.response?.status);
+      
+      // Type guard to check if error is an axios error
+      const isAxiosError = (err: unknown): err is { response?: { data?: { message?: string }, status?: number } } => {
+        return typeof err === 'object' && err !== null && 'response' in err;
+      };
+      
+      if (isAxiosError(error)) {
+        console.error('Error response data:', error.response?.data);
+        console.error('Error status:', error.response?.status);
+      }
       
       // More detailed error handling
       let errorMessage = 'AI processing failed. Please check your AI settings.';
       
-      if (error.response?.status === 400) {
-        errorMessage = error.response?.data?.message || 'Invalid request. Please check your input and try again.';
-      } else if (error.response?.status === 401) {
-        errorMessage = 'Authentication failed. Please check your login status.';
-      } else if (error.response?.status === 500) {
-        errorMessage = error.response?.data?.message || 'Server error. Please ensure you have configured an AI provider with a valid API key.';
-      } else if (error.response?.data?.message) {
-        errorMessage = error.response.data.message;
+      if (isAxiosError(error)) {
+        if (error.response?.status === 400) {
+          errorMessage = error.response?.data?.message || 'Invalid request. Please check your input and try again.';
+        } else if (error.response?.status === 401) {
+          errorMessage = 'Authentication failed. Please check your login status.';
+        } else if (error.response?.status === 500) {
+          errorMessage = error.response?.data?.message || 'Server error. Please ensure you have configured an AI provider with a valid API key.';
+        } else if (error.response?.data?.message) {
+          errorMessage = error.response.data.message;
+        }
+      } else if (error instanceof Error) {
+        errorMessage = error.message;
       }
       
       alert(errorMessage);
@@ -248,7 +260,7 @@ const NoteModal: React.FC<NoteModalProps> = ({
     const result = await callAIDirectly('extract-actions');
     if (result) {
       const actionItems = result.actionItems
-        .map(item => `- [ ] ${item.task}${item.deadline ? ` (Due: ${item.deadline})` : ''}${item.priority ? ` [${item.priority}]` : ''}`)
+        .map((item: { task: string; deadline?: string; priority?: string }) => `- [ ] ${item.task}${item.deadline ? ` (Due: ${item.deadline})` : ''}${item.priority ? ` [${item.priority}]` : ''}`)
         .join('\n');
       setContent(prev => `${prev}\n\n## Action Items\n\n${actionItems}`);
     }
