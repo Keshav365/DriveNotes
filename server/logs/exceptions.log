@@ -1,0 +1,1104 @@
+{
+  error: src/middleware/errorHandler.ts(108,35): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  src/middleware/errorHandler.ts(109,29): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  src/middleware/errorHandler.ts(110,41): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  src/middleware/errorHandler.ts(111,43): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  src/middleware/errorHandler.ts(112,43): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "src/middleware/errorHandler.ts(108,35): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    "src/middleware/errorHandler.ts(109,29): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    "src/middleware/errorHandler.ts(110,41): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    "src/middleware/errorHandler.ts(111,43): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    "src/middleware/errorHandler.ts(112,43): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "src/middleware/errorHandler.ts(108,35): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    "src/middleware/errorHandler.ts(109,29): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    "src/middleware/errorHandler.ts(110,41): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    "src/middleware/errorHandler.ts(111,43): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    "src/middleware/errorHandler.ts(112,43): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at node:internal/modules/cjs/loader:1895:10\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "src/middleware/errorHandler.ts(108,35): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    "src/middleware/errorHandler.ts(109,29): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    "src/middleware/errorHandler.ts(110,41): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    "src/middleware/errorHandler.ts(111,43): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    "src/middleware/errorHandler.ts(112,43): error TS2741: Property 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at node:internal/modules/cjs/loader:1895:10\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)',
+  exception: true,
+  date: 'Fri Aug 15 2025 11:10:43 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 13284,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v22.17.0',
+    argv: [
+      'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\src\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 490012672,
+      heapTotal: 438300672,
+      heapUsed: 404218824,
+      external: 24405302,
+      arrayBuffers: 21245613
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 996921.14 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: null,
+      line: 1895,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1465,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1282,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    }
+  ],
+  service: 'drivenotes-api',
+  timestamp: '2025-08-15 11:10:43'
+}
+{
+  error: [96msrc/middleware/errorHandler.ts[0m:[93m108[0m:[93m35[0m - [91merror[0m[90m TS2741: [0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  
+  [7m108[0m     if (err.name === 'CastError') error = handleCastErrorDB(error);
+  [7m   [0m [91m                                  ~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1076[0m:[93m5[0m
+      [7m1076[0m     name: string;
+      [7m    [0m [96m    ~~~~[0m
+      'name' is declared here.
+  [96msrc/middleware/errorHandler.ts[0m:[93m109[0m:[93m29[0m - [91merror[0m[90m TS2741: [0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  
+  [7m109[0m     if (err.code === 11000) error = handleDuplicateFieldsDB(error as AppError & { keyValue?: Record<string, unknown> });
+  [7m   [0m [91m                            ~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1076[0m:[93m5[0m
+      [7m1076[0m     name: string;
+      [7m    [0m [96m    ~~~~[0m
+      'name' is declared here.
+  [96msrc/middleware/errorHandler.ts[0m:[93m110[0m:[93m41[0m - [91merror[0m[90m TS2741: [0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  
+  [7m110[0m     if (err.name === 'ValidationError') error = handleValidationErrorDB(error);
+  [7m   [0m [91m                                        ~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1076[0m:[93m5[0m
+      [7m1076[0m     name: string;
+      [7m    [0m [96m    ~~~~[0m
+      'name' is declared here.
+  [96msrc/middleware/errorHandler.ts[0m:[93m111[0m:[93m43[0m - [91merror[0m[90m TS2741: [0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  
+  [7m111[0m     if (err.name === 'JsonWebTokenError') error = handleJWTError();
+  [7m   [0m [91m                                          ~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1076[0m:[93m5[0m
+      [7m1076[0m     name: string;
+      [7m    [0m [96m    ~~~~[0m
+      'name' is declared here.
+  [96msrc/middleware/errorHandler.ts[0m:[93m112[0m:[93m43[0m - [91merror[0m[90m TS2741: [0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  
+  [7m112[0m     if (err.name === 'TokenExpiredError') error = handleJWTExpiredError();
+  [7m   [0m [91m                                          ~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1076[0m:[93m5[0m
+      [7m1076[0m     name: string;
+      [7m    [0m [96m    ~~~~[0m
+      'name' is declared here.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m108\x1B[0m:\x1B[93m35\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m108\x1B[0m     if (err.name === 'CastError') error = handleCastErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                  ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m109\x1B[0m:\x1B[93m29\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    '\x1B[7m109\x1B[0m     if (err.code === 11000) error = handleDuplicateFieldsDB(error as AppError & { keyValue?: Record<string, unknown> });\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                            ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m110\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m110\x1B[0m     if (err.name === 'ValidationError') error = handleValidationErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m111\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m111\x1B[0m     if (err.name === 'JsonWebTokenError') error = handleJWTError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m112\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m112\x1B[0m     if (err.name === 'TokenExpiredError') error = handleJWTExpiredError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m108\x1B[0m:\x1B[93m35\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m108\x1B[0m     if (err.name === 'CastError') error = handleCastErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                  ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m109\x1B[0m:\x1B[93m29\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    '\x1B[7m109\x1B[0m     if (err.code === 11000) error = handleDuplicateFieldsDB(error as AppError & { keyValue?: Record<string, unknown> });\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                            ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m110\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m110\x1B[0m     if (err.name === 'ValidationError') error = handleValidationErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m111\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m111\x1B[0m     if (err.name === 'JsonWebTokenError') error = handleJWTError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m112\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m112\x1B[0m     if (err.name === 'TokenExpiredError') error = handleJWTExpiredError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at node:internal/modules/cjs/loader:1895:10\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m108\x1B[0m:\x1B[93m35\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m108\x1B[0m     if (err.name === 'CastError') error = handleCastErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                  ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m109\x1B[0m:\x1B[93m29\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    '\x1B[7m109\x1B[0m     if (err.code === 11000) error = handleDuplicateFieldsDB(error as AppError & { keyValue?: Record<string, unknown> });\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                            ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m110\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m110\x1B[0m     if (err.name === 'ValidationError') error = handleValidationErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m111\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m111\x1B[0m     if (err.name === 'JsonWebTokenError') error = handleJWTError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m112\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m112\x1B[0m     if (err.name === 'TokenExpiredError') error = handleJWTExpiredError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at node:internal/modules/cjs/loader:1895:10\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)',
+  exception: true,
+  date: 'Fri Aug 15 2025 11:21:43 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 844,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v22.17.0',
+    argv: [
+      'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\src\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 491528192,
+      heapTotal: 436989952,
+      heapUsed: 410739512,
+      external: 26439845,
+      arrayBuffers: 23280156
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 997581.281 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: null,
+      line: 1895,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1465,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1282,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    }
+  ],
+  service: 'drivenotes-api',
+  timestamp: '2025-08-15 11:21:43'
+}
+{
+  error: [96msrc/middleware/errorHandler.ts[0m:[93m108[0m:[93m35[0m - [91merror[0m[90m TS2741: [0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  
+  [7m108[0m     if (err.name === 'CastError') error = handleCastErrorDB(error);
+  [7m   [0m [91m                                  ~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1076[0m:[93m5[0m
+      [7m1076[0m     name: string;
+      [7m    [0m [96m    ~~~~[0m
+      'name' is declared here.
+  [96msrc/middleware/errorHandler.ts[0m:[93m109[0m:[93m29[0m - [91merror[0m[90m TS2741: [0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  
+  [7m109[0m     if (err.code === 11000) error = handleDuplicateFieldsDB(error as AppError & { keyValue?: Record<string, unknown> });
+  [7m   [0m [91m                            ~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1076[0m:[93m5[0m
+      [7m1076[0m     name: string;
+      [7m    [0m [96m    ~~~~[0m
+      'name' is declared here.
+  [96msrc/middleware/errorHandler.ts[0m:[93m110[0m:[93m41[0m - [91merror[0m[90m TS2741: [0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  
+  [7m110[0m     if (err.name === 'ValidationError') error = handleValidationErrorDB(error);
+  [7m   [0m [91m                                        ~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1076[0m:[93m5[0m
+      [7m1076[0m     name: string;
+      [7m    [0m [96m    ~~~~[0m
+      'name' is declared here.
+  [96msrc/middleware/errorHandler.ts[0m:[93m111[0m:[93m43[0m - [91merror[0m[90m TS2741: [0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  
+  [7m111[0m     if (err.name === 'JsonWebTokenError') error = handleJWTError();
+  [7m   [0m [91m                                          ~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1076[0m:[93m5[0m
+      [7m1076[0m     name: string;
+      [7m    [0m [96m    ~~~~[0m
+      'name' is declared here.
+  [96msrc/middleware/errorHandler.ts[0m:[93m112[0m:[93m43[0m - [91merror[0m[90m TS2741: [0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  
+  [7m112[0m     if (err.name === 'TokenExpiredError') error = handleJWTExpiredError();
+  [7m   [0m [91m                                          ~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1076[0m:[93m5[0m
+      [7m1076[0m     name: string;
+      [7m    [0m [96m    ~~~~[0m
+      'name' is declared here.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m108\x1B[0m:\x1B[93m35\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m108\x1B[0m     if (err.name === 'CastError') error = handleCastErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                  ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m109\x1B[0m:\x1B[93m29\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    '\x1B[7m109\x1B[0m     if (err.code === 11000) error = handleDuplicateFieldsDB(error as AppError & { keyValue?: Record<string, unknown> });\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                            ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m110\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m110\x1B[0m     if (err.name === 'ValidationError') error = handleValidationErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m111\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m111\x1B[0m     if (err.name === 'JsonWebTokenError') error = handleJWTError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m112\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m112\x1B[0m     if (err.name === 'TokenExpiredError') error = handleJWTExpiredError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m108\x1B[0m:\x1B[93m35\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m108\x1B[0m     if (err.name === 'CastError') error = handleCastErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                  ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m109\x1B[0m:\x1B[93m29\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    '\x1B[7m109\x1B[0m     if (err.code === 11000) error = handleDuplicateFieldsDB(error as AppError & { keyValue?: Record<string, unknown> });\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                            ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m110\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m110\x1B[0m     if (err.name === 'ValidationError') error = handleValidationErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m111\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m111\x1B[0m     if (err.name === 'JsonWebTokenError') error = handleJWTError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m112\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m112\x1B[0m     if (err.name === 'TokenExpiredError') error = handleJWTExpiredError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at node:internal/modules/cjs/loader:1895:10\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m108\x1B[0m:\x1B[93m35\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m108\x1B[0m     if (err.name === 'CastError') error = handleCastErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                  ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m109\x1B[0m:\x1B[93m29\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    '\x1B[7m109\x1B[0m     if (err.code === 11000) error = handleDuplicateFieldsDB(error as AppError & { keyValue?: Record<string, unknown> });\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                            ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m110\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m110\x1B[0m     if (err.name === 'ValidationError') error = handleValidationErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m111\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m111\x1B[0m     if (err.name === 'JsonWebTokenError') error = handleJWTError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m112\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m112\x1B[0m     if (err.name === 'TokenExpiredError') error = handleJWTExpiredError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at node:internal/modules/cjs/loader:1895:10\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)',
+  exception: true,
+  date: 'Fri Aug 15 2025 11:22:51 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 12832,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v22.17.0',
+    argv: [
+      'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\src\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 490037248,
+      heapTotal: 439611392,
+      heapUsed: 402085192,
+      external: 26403457,
+      arrayBuffers: 23243768
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 997649.5 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: null,
+      line: 1895,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1465,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1282,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    }
+  ],
+  service: 'drivenotes-api',
+  timestamp: '2025-08-15 11:22:51'
+}
+{
+  error: [96msrc/middleware/errorHandler.ts[0m:[93m108[0m:[93m35[0m - [91merror[0m[90m TS2741: [0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  
+  [7m108[0m     if (err.name === 'CastError') error = handleCastErrorDB(error);
+  [7m   [0m [91m                                  ~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1076[0m:[93m5[0m
+      [7m1076[0m     name: string;
+      [7m    [0m [96m    ~~~~[0m
+      'name' is declared here.
+  [96msrc/middleware/errorHandler.ts[0m:[93m109[0m:[93m29[0m - [91merror[0m[90m TS2741: [0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  
+  [7m109[0m     if (err.code === 11000) error = handleDuplicateFieldsDB(error as AppError & { keyValue?: Record<string, unknown> });
+  [7m   [0m [91m                            ~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1076[0m:[93m5[0m
+      [7m1076[0m     name: string;
+      [7m    [0m [96m    ~~~~[0m
+      'name' is declared here.
+  [96msrc/middleware/errorHandler.ts[0m:[93m110[0m:[93m41[0m - [91merror[0m[90m TS2741: [0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  
+  [7m110[0m     if (err.name === 'ValidationError') error = handleValidationErrorDB(error);
+  [7m   [0m [91m                                        ~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1076[0m:[93m5[0m
+      [7m1076[0m     name: string;
+      [7m    [0m [96m    ~~~~[0m
+      'name' is declared here.
+  [96msrc/middleware/errorHandler.ts[0m:[93m111[0m:[93m43[0m - [91merror[0m[90m TS2741: [0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  
+  [7m111[0m     if (err.name === 'JsonWebTokenError') error = handleJWTError();
+  [7m   [0m [91m                                          ~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1076[0m:[93m5[0m
+      [7m1076[0m     name: string;
+      [7m    [0m [96m    ~~~~[0m
+      'name' is declared here.
+  [96msrc/middleware/errorHandler.ts[0m:[93m112[0m:[93m43[0m - [91merror[0m[90m TS2741: [0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.
+  
+  [7m112[0m     if (err.name === 'TokenExpiredError') error = handleJWTExpiredError();
+  [7m   [0m [91m                                          ~~~~~[0m
+  
+    [96mnode_modules/typescript/lib/lib.es5.d.ts[0m:[93m1076[0m:[93m5[0m
+      [7m1076[0m     name: string;
+      [7m    [0m [96m    ~~~~[0m
+      'name' is declared here.
+  ,
+  level: 'error',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m108\x1B[0m:\x1B[93m35\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m108\x1B[0m     if (err.name === 'CastError') error = handleCastErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                  ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m109\x1B[0m:\x1B[93m29\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    '\x1B[7m109\x1B[0m     if (err.code === 11000) error = handleDuplicateFieldsDB(error as AppError & { keyValue?: Record<string, unknown> });\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                            ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m110\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m110\x1B[0m     if (err.name === 'ValidationError') error = handleValidationErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m111\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m111\x1B[0m     if (err.name === 'JsonWebTokenError') error = handleJWTError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m112\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m112\x1B[0m     if (err.name === 'TokenExpiredError') error = handleJWTExpiredError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m108\x1B[0m:\x1B[93m35\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m108\x1B[0m     if (err.name === 'CastError') error = handleCastErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                  ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m109\x1B[0m:\x1B[93m29\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    '\x1B[7m109\x1B[0m     if (err.code === 11000) error = handleDuplicateFieldsDB(error as AppError & { keyValue?: Record<string, unknown> });\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                            ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m110\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m110\x1B[0m     if (err.name === 'ValidationError') error = handleValidationErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m111\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m111\x1B[0m     if (err.name === 'JsonWebTokenError') error = handleJWTError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m112\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m112\x1B[0m     if (err.name === 'TokenExpiredError') error = handleJWTExpiredError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at node:internal/modules/cjs/loader:1895:10\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m108\x1B[0m:\x1B[93m35\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m108\x1B[0m     if (err.name === 'CastError') error = handleCastErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                  ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m109\x1B[0m:\x1B[93m29\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    '\x1B[7m109\x1B[0m     if (err.code === 11000) error = handleDuplicateFieldsDB(error as AppError & { keyValue?: Record<string, unknown> });\r\n' +
+    '\x1B[7m   \x1B[0m \x1B[91m                            ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m110\x1B[0m:\x1B[93m41\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m110\x1B[0m     if (err.name === 'ValidationError') error = handleValidationErrorDB(error);\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                        ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m111\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m111\x1B[0m     if (err.name === 'JsonWebTokenError') error = handleJWTError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    "\x1B[96msrc/middleware/errorHandler.ts\x1B[0m:\x1B[93m112\x1B[0m:\x1B[93m43\x1B[0m - \x1B[91merror\x1B[0m\x1B[90m TS2741: \x1B[0mProperty 'name' is missing in type '{ statusCode: number; message: string; isOperational: boolean; }' but required in type '{ message: string; statusCode?: number; isOperational?: boolean; code?: string | number; path?: string; value?: string; errors?: { [key: string]: { message: string; }; }; name: string; stack?: string; }'.\r\n" +
+    '\r\n' +
+    "\x1B[7m112\x1B[0m     if (err.name === 'TokenExpiredError') error = handleJWTExpiredError();\r\n" +
+    '\x1B[7m   \x1B[0m \x1B[91m                                          ~~~~~\x1B[0m\r\n' +
+    '\r\n' +
+    '  \x1B[96mnode_modules/typescript/lib/lib.es5.d.ts\x1B[0m:\x1B[93m1076\x1B[0m:\x1B[93m5\x1B[0m\r\n' +
+    '    \x1B[7m1076\x1B[0m     name: string;\r\n' +
+    '    \x1B[7m    \x1B[0m \x1B[96m    ~~~~\x1B[0m\r\n' +
+    "    'name' is declared here.\r\n" +
+    '\n' +
+    '    at createTSError (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:859:12)\n' +
+    '    at reportTSError (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:863:19)\n' +
+    '    at getOutput (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1077:36)\n' +
+    '    at Object.compile (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1433:41)\n' +
+    '    at Module.m._compile (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1617:30)\n' +
+    '    at node:internal/modules/cjs/loader:1895:10\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts:1621:12)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)',
+  exception: true,
+  date: 'Fri Aug 15 2025 11:24:12 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 17324,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v22.17.0',
+    argv: [
+      'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\dist\\bin.js',
+      'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\src\\server.ts'
+    ],
+    memoryUsage: {
+      rss: 487489536,
+      heapTotal: 436465664,
+      heapUsed: 411065136,
+      external: 26431511,
+      arrayBuffers: 23271822
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 997730.843 },
+  trace: [
+    {
+      column: 12,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'createTSError',
+      line: 859,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'reportTSError',
+      line: 863,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'getOutput',
+      line: 1077,
+      method: null,
+      native: false
+    },
+    {
+      column: 41,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.compile',
+      line: 1433,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1617,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: null,
+      line: 1895,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'C:\\Users\\ShivamG\\Documents\\DrivenShit\\server\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1621,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1465,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1282,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    }
+  ],
+  service: 'drivenotes-api',
+  timestamp: '2025-08-15 11:24:12'
+}
